@@ -1,113 +1,110 @@
-/* --- RESET --- */
+/* --- RESET BÁSICO --- */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Arial, sans-serif;
-    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
 }
 
-/* --- CABECERA (HEADER) --- */
-.header-container {
-    display: flex;                /* Pone los elementos en línea */
-    justify-content: space-between; /* Separa Título (izq) y Botones (der) */
+/* --- BARRA SUPERIOR (HEADER) --- */
+.navbar {
+    display: flex;                /* Pone los elementos en fila */
+    justify-content: space-between; /* Título a la izquierda, Botones a la derecha */
     align-items: center;          /* Centra verticalmente */
-    padding: 0 40px;              /* Espacio a los lados */
+    padding: 10px 40px;           /* Espacio alrededor */
+    border-bottom: 2px solid #ddd; /* Línea gris abajo */
+    background-color: white;
     height: 80px;                 /* Altura de la barra */
-    border: 2px solid #000;       /* El borde negro del recuadro del header */
-    margin: 20px;                 /* Margen exterior para separarlo del borde pantalla */
-    margin-bottom: 40px;
 }
 
-.header-title {
+/* Texto de la izquierda */
+.logo-text {
+    font-size: 20px;
     font-weight: bold;
+    color: #333;
     text-transform: uppercase;
-    font-size: 18px;
 }
 
-/* --- BOTONES DE LA DERECHA --- */
+/* Contenedor de los botones */
 .header-buttons {
     display: flex;
-    gap: 15px; /* Espacio entre botones */
+    gap: 15px; /* Separación entre botones */
 }
 
+/* --- ESTILO DE LOS BOTONES (LO IMPORTANTE) --- */
 .btn {
     text-decoration: none;
-    padding: 12px 20px;
-    color: white;
+    padding: 12px 25px;       /* Tamaño del botón (gordo) */
     font-weight: bold;
-    border-radius: 5px;
+    color: white;             /* Letra blanca */
+    border-radius: 5px;       /* Bordes un poco redondeados */
     font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
 }
 
+/* Botones Azules (Como en tu foto) */
 .btn-blue {
-    background-color: #3498db; /* Azul */
+    background-color: #3498db;
 }
 
+/* Botón Oscuro (El último) */
 .btn-dark {
-    background-color: #2c3e50; /* Azul oscuro casi negro */
+    background-color: #2c3e50;
 }
 
-/* Efecto Hover */
+/* Efecto al pasar el ratón */
 .btn:hover {
     opacity: 0.9;
     transform: translateY(-2px);
 }
 
-/* --- CONTENIDO PRINCIPAL --- */
+/* --- ESTILOS DEL RESTO DE LA PÁGINA (Wireframe) --- */
 .main-content {
     max-width: 1000px;
-    margin: 0 auto; /* Centrado */
+    margin: 40px auto; /* Centrado */
     padding: 0 20px;
 }
 
-/* Caja de Imagen */
-.image-box {
+.hero-box {
     width: 100%;
     height: 150px;
-    border: 2px solid #000;    /* Borde negro */
-    border-radius: 15px;       /* Bordes redondeados */
+    border: 2px solid #333;
+    border-radius: 10px; /* Bordes redondos como pediste antes */
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-/* Título Destacados */
 .section-title {
-    border: 2px solid #000;    /* Recuadro alrededor del título */
-    padding: 10px;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
 }
 
-/* Proyectos */
-.projects-row {
+.projects-container {
     display: flex;
     gap: 30px;
 }
 
 .project-box {
-    width: 150px;
-    height: 80px;
-    border: 2px solid #000;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
 }
 
-/* Footer */
 .footer-box {
-    margin-top: 100px; /* Mucho espacio para empujarlo abajo */
-    border: 2px solid #000;
-    padding: 20px;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #333;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 20px;
 }
