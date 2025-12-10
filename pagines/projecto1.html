@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Llistat de Projectes - Web ITB</title>
+    <title>Detall Projecte - Web ITB</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
 </head>
@@ -13,51 +14,51 @@
     <header class="navbar">
         <div class="logo-text">MENU PRINCIPAL</div>
         <nav class="header-buttons">
-            <a href="llistat.html" class="btn btn-dark">Llistat de projectes</a>
+            <a href="../index.html" class="btn btn-dark">Torna al llistat</a>
             <a href="formulari.html" class="btn btn-blue">Formulari de contacte</a>
             <a href="#" class="btn btn-blue">3 funcionalitats JS</a>
             <button class="btn btn-blue" style="cursor: pointer;" onclick="document.body.classList.toggle('dark-mode')">🌙 / ☀️</button>
         </nav>
     </header>
 
-    <div class="container">
-        <h1 class="section-title" style="margin-top: 30px;">Tots els Projectes</h1>
+    <div class="container" style="margin-top: 30px;">
 
-        <div class="projects-grid">
+        <div class="detail-header">
+            PROJECTE 1: APLICACIÓ DE GESTIÓ DE TASQUES
+        </div>
 
-            <article class="card-project">
-                <div class="card-title">Projecte 1: Web Corporativa</div>
-                <p>Disseny d'una pàgina web completa per a una empresa de tecnologia.</p>
+        <div class="detail-subheader">
+            <strong>Documentació tècnica:</strong> HTML5, CSS3, JavaScript (Vanilla), LocalStorage.
+        </div>
+
+        <div class="detail-content">
+
+            <div class="detail-text">
+                <h3>Descripció del projecte</h3>
                 <br>
-                <a href="projecte1.html" class="btn btn-blue" style="text-align: center;">Veure Detall</a>
-            </article>
-
-            <article class="card-project">
-                <div class="card-title">Projecte 2: App de Gestió</div>
-                <p>Aplicació web per a la gestió d'inventari d'una botiga.</p>
+                <p>Aquesta aplicació web permet als usuaris crear, editar i eliminar tasques pendents. Les dades es guarden localment al navegador de l'usuari, per la qual cosa no es perden en tancar la pàgina.</p>
                 <br>
-                <a href="projecte1.html" class="btn btn-blue" style="text-align: center;">Veure Detall</a>
-            </article>
-
-            <article class="card-project">
-                <div class="card-title">Projecte 3: Blog Personal</div>
-                <p>Creació d'un blog amb HTML i CSS bàsic.</p>
+                <p><strong>Característiques principals:</strong></p>
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li>Afegir noves tasques amb un títol i una descripció.</li>
+                    <li>Marcar tasques com a completades.</li>
+                    <li>Filtrar tasques (totes, completades, pendents).</li>
+                    <li>Interfície d'usuari neta i intuïtiva.</li>
+                </ul>
                 <br>
-                <a href="#" class="btn btn-blue" style="text-align: center; opacity: 0.6;">En construcció</a>
-            </article>
+                <p>Aquest projecte ha estat una excel·lent oportunitat per aprofundir en la manipulació del DOM amb JavaScript i l'ús de l'emmagatzematge local del navegador.</p>
+            </div>
 
-            <article class="card-project">
-                <div class="card-title">Projecte 4: Botiga Online</div>
-                <p>Maquetació d'una botiga de roba amb passarel·la de pagament simulada.</p>
-                <br>
-                <a href="#" class="btn btn-blue" style="text-align: center; opacity: 0.6;">En construcció</a>
-            </article>
+            <div class="detail-image">
+                <p style="text-align: center; padding: 20px;">[ ESPAI PER A LA IMATGE DEL PROJECTE ]</p>
+            </div>
 
         </div>
 
         <footer class="footer-box">
             2025/26 Alumnes : Biel y Ramiro
         </footer>
+
     </div>
 
 </body>
