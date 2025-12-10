@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Enlace al mismo CSS que la otra página -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
@@ -22,22 +22,22 @@
             <!-- El enlace a 'Llistat' ahora lleva al index.html -->
             <a href="../index.html" class="btn btn-blue">Llistat de projectes</a>
             <!-- El botón de contacto ahora está activo (clase btn-dark para destacar) -->
-            <a href="contacte.html" class="btn btn-dark">Formulari de contacte</a>
+            <a href="./formulari.html" class="btn btn-dark">Formulari de contacte</a>
             <a href="#" class="btn btn-blue">3 funcionalitats JS</a>
         </nav>
     </header>
     <!-- CONTENIDO PRINCIPAL (Específico de Contacto) -->
+    <br><br>
     <form>
 
             <fieldset class="dades_form"> <!-- Sección para los datos personales -->
                 <legend class="titol_dades_form"><strong>DADES PERSONALS</strong></legend>
                 <!-- Título de esta sección -->
 
-
                 <div style="display: inline-block; margin-right: 10px; width: 49%;">
                     <!-- Campo para el nombre -->
                     <label for="nom">Nom:</label>
-                    <input style="width: 56%; border:1px solid blue; padding:6px; border-radius: 5px;" type="text"
+                    <input style="width: 56%; border:1px solid black; padding:6px; border-radius: 5px;" type="text"
                         name="nom" placeholder="Nom" />
                 </div>
                 <br><br>
@@ -45,7 +45,7 @@
                 <div style="display: inline-block; margin-right: 10px; width: 49%;">
                     <!-- Campo para los apellidos -->
                     <label for="cognoms">Cognoms:</label>
-                    <input style="width: 50%; border:1px solid blue; padding:6px; border-radius: 5px; " type="text"
+                    <input style="width: 50%; border:1px solid black; padding:6px; border-radius: 5px; " type="text"
                         id="cognoms" name="cognoms" placeholder="Cognoms">
                 </div>
                 <br><br>
@@ -54,7 +54,7 @@
                 <div style="display: inline-block; margin-right: 20px; width: 48%;">
                     <!-- Campo para el correo -->
                     <label for="email">Correu:</label>
-                    <input style="width: 100%; border:1px solid blue; padding:6px; border-radius: 5px; " type="email"
+                    <input style="width: 100%; border:1px solid black; padding:6px; border-radius: 5px; " type="email"
                         id="email" name="email" placeholder="correu">
                     <br><br>
 
@@ -64,7 +64,7 @@
                         <label style="margin-top: 10px;" for="edat">Franja d'edat</label>
                         <br><br>
                         <select
-                            style="width: 100%; border:1px solid blue; padding:6px; border-radius: 5px; background-color: white"
+                            style="width: 100%; border:1px solid black; padding:6px; border-radius: 5px; background-color: white"
                             id="edat" name="edat">
                             <option value="menor16">Menor 16</option>
                             <option value="16-25">16-25</option>
